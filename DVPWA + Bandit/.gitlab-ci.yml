@@ -1,0 +1,16 @@
+stages:
+  - bandit_scan
+
+build-job:
+  stage: bandit_scan
+  image: python:3.6
+  script:
+    - git clone https://github.com/anxolerd/dvpwa
+    - cd dvpwa
+    - pip3 install bandit
+    - bandit -v -r /builds/sample_devsecops/damnvulnerablepythonapp/dvpwa -f json -o /builds/sample_devsecops/damnvulnerablepythonapp/dvpwa/result.json
+    - cat /builds/sample_devsecops/damnvulnerablepythonapp/dvpwa/result.json
+  artifacts:
+    when: always
+    paths:
+      - /builds/sample_devsecops/damnvulnerablepythonapp/dvpwa/result.json
