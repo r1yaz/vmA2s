@@ -25,7 +25,21 @@ build-job:
 
 Clean code present in [.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/DVPWA%20+%20Bandit/.gitlab-ci.yml)
 
-### Next steps
+## Results
+
+Update the YAML CI/CD Code into a repository as the .gitlab-ci.yml file.
+
+![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_1.png)
+
+Auto-trigger the pipeline when a commit is made to the repository and a valid .gitlab-ci.yml file is present. As indicated, Artifact is generated and uploaded.
+
+![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_2.png)
+
+Artifact contains bandit scan reports of the Damn Vulnerable Python Web Application as highlighted below.
+
+![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_3.png)
+
+## Next steps
 1. Achieve the same using GitHub Actions
 2. Achieve the same using CircleCI
 

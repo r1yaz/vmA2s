@@ -4,7 +4,13 @@
 
 ## DVPWA + Bandit
 
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+
 Run bandit SAST scans over the dvpwa (Damn Vulnerable Python Web Application) repository using GitLab CI.
+
+#update things here regarding the 3 screenshots you added (with ref links)
+start a new project
+
 
 ### Code
 
@@ -29,7 +35,19 @@ build-job:
 
 Clean code present in [.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/DVPWA%20+%20Bandit/.gitlab-ci.yml)
 
+### Results
 
+Update the YAML CI/CD Code into a repository as the .gitlab-ci.yml file.
+
+![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_1.png)
+
+Auto-trigger the pipeline when a commit is made to the repository and a valid .gitlab-ci.yml file is present. As indicated, Artifact is generated and uploaded.
+
+![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_2.png)
+
+Artifact contains bandit scan reports of the Damn Vulnerable Python Web Application as highlighted below.
+
+![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_3.png)
 
 
 
