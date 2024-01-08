@@ -2,6 +2,12 @@
 
 > DevSecOps projects/code which I've built and am in the process of open sourcing it. Releasing every 2-3 days.
 
+## Sample Architecture
+
+Something I'm working on in my free time.
+
+![Image of Sample Arch](https://github.com/r1yaz/vmA2s/blob/main/Images/sample_devsecops_arch_1.png)
+
 ## DVPWA + Bandit
 
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
@@ -39,15 +45,15 @@ Clean code present in [.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/
 
 Update the YAML CI/CD Code into a repository as the .gitlab-ci.yml file.
 
-![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_1.png)
+![Image showing the updated YAML code](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_1.png)
 
 Auto-trigger the pipeline when a commit is made to the repository and a valid .gitlab-ci.yml file is present. As indicated, Artifact is generated and uploaded.
 
-![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_2.png)
+![Image showing the CI/CD pipeline being triggered and the artifact being generated and uploaded](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_2.png)
 
 Artifact contains bandit scan reports of the Damn Vulnerable Python Web Application as highlighted below.
 
-![.gitlab-ci.yml](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_3.png)
+![Image showing the Artifact with the bandit scan reports](https://github.com/r1yaz/vmA2s/blob/main/Images/dvpwa_bandit_3.png)
 
 
 
